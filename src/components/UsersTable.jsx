@@ -6,6 +6,8 @@ export default function UsersTable({ users }) {
           <th>ID</th>
           <th>Name</th>
           <th>Email</th>
+          <th>Role</th>
+          <th>Status</th>
         </tr>
       </thead>
       <tbody>
@@ -14,6 +16,14 @@ export default function UsersTable({ users }) {
             <td>{user.id}</td>
             <td>{user.name}</td>
             <td>{user.email}</td>
+            <td>
+              <span className="pill">{user.role}</span>
+            </td>
+            <td>
+              <span className={`badge badge-${user.status.toLowerCase()}`}>
+                {user.status}
+              </span>
+            </td>
           </tr>
         ))}
       </tbody>
