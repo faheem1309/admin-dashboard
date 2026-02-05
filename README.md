@@ -147,7 +147,7 @@ With authentication and real data, it can evolve into a **production-ready inter
 
 ## 🧑‍💻 Installation & Setup
 
-```bash
+
 git clone https://github.com/faheem1309/admin-dashboard.git
 cd admin-dashboard
 npm install
